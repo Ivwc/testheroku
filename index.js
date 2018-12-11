@@ -48,9 +48,7 @@ app.post('/api/getform', (req, res) => {
     console.log('password:' + password);
 
 });
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-})
+app.listen(port)
 
 
 
