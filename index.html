@@ -10,10 +10,32 @@
     <script src="/javascripts/index.js"></script>
 
 </head>
+<style>
+    html,
+    body {
+        background: #3671A5;
+        height: 100%
+    }
+</style>
 
 <body>
     <h2>这是首页</h2>
 
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    const axios = window.axios;
+
+    axios.post('api/getform', {
+            email: 'd36584@gmail.com',
+            password: 'a7071370713'
+        })
+        .then(function(response) {
+            console.log(response);
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+</script>
 
 </html>
